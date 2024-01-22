@@ -1,0 +1,130 @@
+\documentclass{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+
+
+\usepackage{manual_template}
+% tem que decidir uma fonte legal
+% https://tug.org/FontCatalogue/typewriterfonts.html
+
+% para gerar texto lixo
+\usepackage{blindtext}
+\usepackage{lipsum}
+
+\title{Manual de Ingressante}
+\author{Centro Acadêmico da Computação}
+\newcommand{\ano}{2024}
+\date{\ano}
+\newcommand{\shortauthor}{CACo}
+
+\newcommand{\autoresCapa}{%
+autor1 (EC021) \\
+autor 2 (CC020)
+}%
+
+\newcommand{\autoresDiagramacao}{%
+autora.e (curso) \\
+autora.e (curso) \\
+autora.e (curso)
+}%
+
+\newcommand{\autoresRevisao}{%
+autora.e (curso) \\
+autora.e (curso) \\
+autora.e (curso) \\
+autora.e (curso) \\
+autora.e (curso) \\
+autora.e (curso)
+}%
+
+\newcommand{\gestao}{nome da gestao (\ano)}
+
+\begin{document}
+
+\input{_adendos/main}
+
+%\maketitle
+%\tableofcontents
+
+%\setcounter{page}{1}
+
+\include{0_boas_vindas/main}
+
+\include{1_infraestrutura_unicamp/main}
+
+\include{2_burocracias_e_estudos/main}
+
+\chapter{Convivendo na Unicam}
+\lipsum[1-5]
+
+\section{whatever}
+\lipsum[1-5]
+
+
+\chapter{outro capitulo}
+\lipsum[1-5]
+
+%\chapter{Convivendo na Unicamp\\ {\color{white}. } \hspace{5mm} {\normalsize e no mundo}}
+\chapter{Convivendo na Unicamp}
+\lipsum[1-5]
+
+\setcounter{section}{17}
+\section{Mais secao (numero 17)}
+
+\lipsum[1-5]
+
+\section{E outra secao}
+
+\lipsum[1-5]
+
+\section{mais outra secao}
+
+\lipsum[1-5]
+
+\section{Eu amo secao}
+\setcounter{subsection}{3}
+\subsection{Algumas formas de evitar e combater o \\ machismo no dia a dia da universidade}
+
+\lipsum[1-5]
+
+%\chapter{Vivendo em Barão \\ {\color{white}. } \hspace{5mm} {\normalsize Barão Geraldo ou BG}}
+\chapter{Vivendo em Barão Geraldo}
+\lipsum[1-5]
+
+\chapter{Além da Graduação}
+\lipsum[1-5]
+
+\chapter{aba}
+\section{aoba}
+oi
+
+terminal \faTerminal, linux \faLinux, sapo \faFrog
+
+github \faGithub, linkedin \faLinkedin, gitlab \faGitlab, email \faEnvelope, telegram \faPaperPlane[regular] \faTelegram\ \faTelegramPlane, whats \faWhatsapp
+
+map marker \faMapMarker*, restaurantes \faUtensils, cafe \faCoffee, ra \faIdCard[regular] \faAddressCard[regular], casa \faHome
+
+\begin{list}{\faTerminal}{}  
+\item item A bla bla bla
+\item item B blablabla
+\end{list}
+
+\section{Testes de links}
+
+
+\instagram{meuinstagram}
+
+\telegram{meugrupotelegram}
+
+\discord{meugrupodiscord}
+
+%\pagebreak
+
+\lipsum[1-5]
+
+\begin{tags}
+    \github{meuusergithub} \sep \gitlab{meuusergitlab}    
+\end{tags}
+
+\end{document}
